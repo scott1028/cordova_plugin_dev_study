@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="test.Echo"
+    version="1.0.0">
+
+    <name>EchoPlugin</name>
+
+  <description>
+    Echo Plugin for Steroids.js
+  </description>
+
+  <asset src="www/EchoPlugin.js" target="plugins/EchoPlugin.js" />
+
+  <engines>
+    <engine name="cordova" version=">=2.7.0" />
+  </engines>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="plugins">
+      <plugin name="Echo" value="test.Echo"/>
+    </config-file>
+
+    <source-file src="src/android/test/Echo.java"
+      target-dir="src/test/plugin" />
+  </platform>
+</plugin>
