@@ -2,6 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     id="test.Echo"
     version="1.0.0">
+    <!-- id 盡量打 package name, 當然你也可以另外取名子 -->
 
     <name>EchoPlugin</name>
 
@@ -9,8 +10,9 @@
     Echo Plugin for Steroids.js
   </description>
 
+  <!-- JavaScript Interface 的 source & copy to dist path -->
   <asset src="www/EchoPlugin.js" target="plugins/EchoPlugin.js" />
-
+  
   <engines>
     <engine name="cordova" version=">=2.7.0" />
   </engines>
@@ -21,7 +23,7 @@
       <plugin name="Echo" value="test.Echo"/>
     </config-file>
 
-    <source-file src="src/android/test/Echo.java"
-      target-dir="src/test/plugin" />
+    <source-file src="src/android/test/Echo.java" target-dir="src/test" />
+    <!-- target-dir 會對應 package path, copy 到 cordova android project 的路徑 -->
   </platform>
 </plugin>
