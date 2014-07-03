@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.book"
+    version="0.0.1">
+    <name>book</name>
+    <description>book!</description>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <js-module name="book" src="www/book.js">
+
+        <!-- 真正會出現在 JavaScript 環境的 Function 名稱 -->
+        <!-- 如果沒設定在 JS 好像會抓不到 -->
+        <!-- <clobbers target="CDVbook" /> -->
+
+    </js-module>
+    <platform name="android">
+        <source-file src="src/android/CDVbook.java" target-dir="src/com/book" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="book">
+                <!-- value 要填寫道 .java File 的路徑 -->
+                <param name="android-package" value="com.book.CDVbook" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+
+        </config-file>
+    </platform>
+</plugin>
