@@ -2,7 +2,10 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
         "file": "plugins/com.book/www/book.js",
-        "id": "com.book.book"
+        "id": "com.book.book",
+        "clobbers": [
+            "CDVbook"
+        ]
     }
 ];
 module.exports.metadata = 

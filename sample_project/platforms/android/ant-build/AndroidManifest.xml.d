@@ -1,2 +1,2 @@
-C:\Sites\test_plugin\scott_echo\platforms\android\ant-build\AndroidManifest.xml : \
-C:\Sites\test_plugin\scott_echo\platforms\android\AndroidManifest.xml \
+C:\Sites\cordova_plugin_dev_study\sample_project\platforms\android\ant-build\AndroidManifest.xml : \
+C:\Sites\cordova_plugin_dev_study\sample_project\platforms\android\AndroidManifest.xml \
