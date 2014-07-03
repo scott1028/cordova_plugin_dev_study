@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- id 會影響在 plugins 目錄下的名稱 -->
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="test1.test_plugin"
+      version="1.0.0">
+    <name>Echo1</name>
+    <description>Web intents for Cordova</description>
+    <license>MIT</license>
+    <keywords>cordova,webintent</keywords>
+
+    <js-module src="www/test_plugin.js" name="Test1">
+        <clobbers target="Test1" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Test1" >
+                <param name="android-package" value="test1.test_plugin"/>
+            </feature>
+        </config-file>
+
+        <!-- Target-dir 要對照 .java file 的 Package Name -->
+        <source-file src="src/android/test_plugin.java" target-dir="src/test1/test_plugin" />
+    </platform>
+</plugin>
