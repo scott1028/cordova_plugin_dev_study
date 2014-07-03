@@ -4,7 +4,7 @@ module.exports = [
         "file": "plugins/com.book/www/book.js",
         "id": "com.book.book",
         "clobbers": [
-            "CDVbook"
+            "scotts_tool"
         ]
     }
 ];

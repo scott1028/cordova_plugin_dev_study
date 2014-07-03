@@ -51,7 +51,7 @@ var app = {
         // alert(Object.keys(CDVbook));
 
         // 根據 clobbers target 與 exports function
-        CDVbook.book123("scott echo", function(data){
+        scotts_tool.book123("scott echo", function(data){
             alert(data);
         });
     }

@@ -16,7 +16,7 @@
         <!-- 真正會出現在 JavaScript 環境的 Function 名稱 -->
         <!-- 如果沒設定在 JS 好像會抓不到 -->
         <!-- ref: http://docs.phonegap.com/zh/3.5.0/guide_hybrid_plugins_index.md.html#%E5%A4%96%E6%8E%9B%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC%E6%8C%87%E5%8D%97 -->
-        <clobbers target="CDVbook" />
+        <clobbers target="scotts_tool" />
 
     </js-module>
     <platform name="android">
